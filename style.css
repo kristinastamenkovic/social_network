@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url('images/background-clean.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.error {
+    color: red;
+    font-size: smaller;
+    margin-left: 5px;
+}
+.success {
+    color: green;
+}
+nav {
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    height: 45px;
+    background-color:  rgb(167, 30, 83);
+    text-align: center;
+    border: 1px solid white;
+}
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 5px;
+}
+nav ul li:hover {
+    background-color: rgb(240, 208, 196);
+}
+nav ul li a:hover {
+    color:black;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+#hello {
+    text-align: left;
+    margin-left: 50px;
+    font-weight: lighter;
+    font-style: italic;
+}
+input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(99, 96, 96);
+}
+input[type=submit] {
+    background-color: #68c75b;
+    border: 1px solid #6cb362;
+    border-radius: 5%;
+    color: white;
+    font-size: 20px;
+    height: 35px;
+    margin-top: 10px;
+    padding-top: 1px;
+}
+label {
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 50px;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.table tr:nth-child(even){
+    background-color: #f2f2f2;}
+.table tr:hover {
+    background-color: #ddd;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border-bottom: 5px solid #4CAF50;
+}
+
+#follow {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    background-color: #39973c;
+    border-radius: 10%;
+    margin: 5px;
+    padding: 5px 10px;
+}
+#unfollow {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(59, 59, 59);
+    background-color: #bcc4bc;
+    border-radius: 10%;
+    margin: 5px;
+    padding: 5px 10px;
+}
+#index {
+    background-color: white;
+    text-align: center;
+    margin-top: 10%;
+    padding: 30px;
+}
+
+#login {
+    text-decoration: none;
+    font-size: 23px;
+    text-align: center;
+    color: #4a9b3f;
+    background-color: rgb(250, 250, 250);
+    border: 2px solid #4a9b3f;
+    border-radius: 5%;
+    padding: 6px 10px;
+}
+#account {
+    text-decoration: none;
+    font-size: 23px;
+    text-align: center;
+    color: white;
+    background-color: #4a9b3f;
+    border-radius: 5%;
+    padding: 8px 10px;
+}
+#back {
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: #4b49b6;
+    border-radius: 10%;
+    margin: 15px;
+    padding: 5px 10px;
+}
+.profileTable {
+    border-collapse: collapse;
+    width: 70%;
+    margin: 50px;
+}
+
+.profileTable td {
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+}
+#m {
+    color: rgb(33, 33, 228);
+}
+#f {
+    color: rgb(235, 31, 109);
+}
+#o {
+    color: rgb(75, 67, 67);
+}
+
+
+/*Dizajn za mobilne telefone*/
+@media only screen and (max-width: 425px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    nav ul li a {
+        text-align: center;
+        font-size: 15px;
+    }
+    form {
+        margin: 10px;
+    }
+}
+
+/* Dizajn za tablet uredjaje */
+@media only screen and (min-width: 426px ) and (max-width: 768px) {
+    nav ul li a {
+        text-align: center;
+        font-size: 15px;
+    }
+    form {
+        margin-left: 10%;
+    }
+    #index {
+        margin-left: 25%;
+    }
+    /* Sirine kolona */
+   .col-t-1 {
+       width: 8.33%;
+   }
+   .col-t-2 {
+       width: 16.66%;
+   }
+   .col-t-3 {
+       width: 25%;
+   }
+   .col-t-4 {
+       width: 33.33%;
+   }
+   .col-t-5 {
+       width: 41.66%;
+   }
+   .col-t-6 {
+       width: 50%;
+   }
+   .col-t-7 {
+       width: 58.33%;
+   }
+   .col-t-8 {
+       width: 66.66%;
+   }
+   .col-t-9 {
+       width: 75%;
+   }
+   .col-t-10 {
+       width: 83.33%;
+   }
+   .col-t-11 {
+       width: 91.66%;
+   }
+   .col-t-12 {
+       width: 100%;
+   }
+}
+
+
+/* Dizajn za desktop uredjaje*/
+@media only screen and (min-width: 769px){
+    form {
+        margin-left: 40%;
+    }
+    #index {
+        margin-left: 33%;
+    }
+    /* Sirine kolona */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
